@@ -11,13 +11,15 @@ app.use(express.json());
 app.post('/login', (req, res) => {
     const {user, pass} = req.body;
 
-    if(user === 'user1' && pass === '123' || user === 'user2' && pass === '456') {
-        res.json({success: true, message: 'Succesfuly Logged Into ur Account'});
+    // Database Connection & Validation here
+    if(user === 'user1' && pass === '123') {
+        res.json({success: true, message: 'Succesfuly Logged Into ur Account', redirectTo: '/weather'});
     } else {
-        res.json({success: false, message: 'Wrong User or Password'});
+        res.json({success: false, message: 'Wrong User or Password',  redirectTo: '/'});
     }
+
 });
 
-app.listen(8080, () => {
-    console.log(`Server started on http://localhost:8080`);
+app.listen(3000, () => {
+    console.log(`Server started on http://localhost:3000`);
 });

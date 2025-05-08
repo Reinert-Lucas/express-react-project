@@ -1,5 +1,13 @@
+.login {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
 .loginForm {
-    width: 50%;
+    width: 60%;
+    max-width: 500px;
     height: 15rem;
     padding: 1rem;
     background-color: rebeccapurple;
@@ -11,6 +19,7 @@
 }
 .loginTitle {
     align-self: center;
+    text-wrap: nowrap;
     margin: 0 1rem 3rem;
     color: #dddddd;
     font-family: Arial, Helvetica, sans-serif;
