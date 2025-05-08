@@ -6,6 +6,7 @@ function Weather() {
     const [temp, setTemp] = useState('');
     const [code, setCode] = useState(0);
     const weatherDesc = weatherCodes[code] || 'WeatherCode not Found';
+    // Excecute the API-Call once
     useEffect(() => {
         try {
             async function fecthWeatherApi 
@@ -24,10 +25,10 @@ function Weather() {
 
     return(
         <>
-            <h1>Weather</h1>
+            <h1>Current weather in Argentina</h1>
             <section>
                 <h3>Temp: {temp}</h3>
-                <p>Status: {weatherDesc}</p>
+                <p>{weatherDesc}</p>
             </section>
         </>
     )
