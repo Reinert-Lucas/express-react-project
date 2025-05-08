@@ -8,9 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lucas Iván Reinert",
   "license": "MIT",
-  "description": "Proyecto con React y Express.js",
+  "description": "Project with React and Express.js",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",

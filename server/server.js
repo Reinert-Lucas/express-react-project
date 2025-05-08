@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
+// App Config
 const corsOptions = {
     origin: ["http://localhost:5173"],
 }
