@@ -40,6 +40,7 @@ function Login() {
                     <input type="text" value={user} placeholder='User' className='loginInput' onChange={e => setUser(e.target.value)} />
                     <input type="password" value={pass} placeholder='Password' className='loginInput' onChange={e => setPass(e.target.value)} />
                     <input type="submit" value="LogIn" className='sbmtBtn' />
+                    <span>User: user1 / Pass: 123</span>
                 </form>
             </section>
         </>

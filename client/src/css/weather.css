@@ -1,0 +1,37 @@
+.weather {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.weatherData {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    padding: 1rem;
+    background-color: rebeccapurple;
+    color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.weatherData img {
+    width: 150px;
+}
+.weatherData h3 {
+    margin: 0 0 1rem 0;
+}
+.weatherData p {
+    text-align: center;
+}
+.weatherData p a {
+    color: #c4ffff;
+}
+.weatherTitle {
+    text-wrap: nowrap;
+    margin: 0 1rem 3rem;
+}

@@ -1,4 +1,5 @@
 import axios from "axios";
+import '../../css/weather.css'
 import weatherCodes from '../../data/weatherCodes.json'
 import { useEffect, useState } from "react";
 
@@ -23,12 +24,15 @@ function Weather() {
         }
     }, []);
 
-    return(
+    return (
         <>
-            <h1>Current weather in Argentina</h1>
-            <section>
-                <h3>Temp: {temp}</h3>
-                <p>{weatherDesc}</p>
+            <section className="weather">
+                <section className="weatherData">
+                    <h1 className="weatherTitle">Current weather in Argentina</h1>
+                    <img src="/icons/argFlag.svg" alt="" />
+                    <h3>Temp: {temp}</h3>
+                    <p>{weatherDesc}<br />Data from <a href="https://open-meteo.com/" target="_blank">Open Meteo API</a></p>
+                </section>
             </section>
         </>
     )
